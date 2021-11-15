@@ -1,5 +1,7 @@
+from Tests.testFunctionalitati import testMutareObiecte, testSchimbaDescrierea, testPretMaximLocatie, testOrdonareDupaPret, testsumaPreturilor
 from Tests.testCRUD import testAdaugaObiect, testStergeObiect, testModificaObiect
 from Tests.testDomain import testObiect
+from Tests.testUndoRedo import testundoredo
 
 
 def runAllTests():
@@ -7,3 +9,9 @@ def runAllTests():
     testAdaugaObiect()
     testStergeObiect()
     testModificaObiect()
+    testMutareObiecte()
+    testSchimbaDescrierea()
+    testPretMaximLocatie()
+    testOrdonareDupaPret()
+    testsumaPreturilor()
+    testundoredo()

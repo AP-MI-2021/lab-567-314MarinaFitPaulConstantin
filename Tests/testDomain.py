@@ -3,10 +3,10 @@ from Domain.obiect import creeazaObiect, getId, getNume, getLocatie, getPret, ge
 
 
 def testObiect():
-    obiect = creeazaObiect("1", "Masa", "Utilizat pentru depozitarea obiectelor", 200, "In living")
+    obiect = creeazaObiect("1", "Scaun", "Stai pe el", 100, "AAAA")
 
     assert getId(obiect) == "1"
-    assert getNume(obiect) == "Masa"
-    assert getDescriere(obiect) == "Utilizat pentru depozitarea obiectelor"
-    assert getPret(obiect) == 200
-    assert getLocatie(obiect) == "In living"
+    assert getNume(obiect) == "Scaun"
+    assert getDescriere(obiect) == "Stai pe el"
+    assert getPret(obiect) == 100
+    assert getLocatie(obiect) == "AAAA"
