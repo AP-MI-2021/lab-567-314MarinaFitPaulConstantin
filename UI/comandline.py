@@ -12,13 +12,14 @@ def command_line_console(lista):
                 print("pe care doriti sa le introduceti separate prin virgula ")
                 print("Pentru a modifica,scrieti update,apoi virgula si id-ul obiectului ce urmeaza")
                 print("Sa fie modificat,urmat de noile date")
-                print("Pentru a sterge un obiect scrieti delete,apoi virgula si id-ul obiectului ce urmeaza sa se stearga")
+                print("Pentru a sterge un obiect scrieti delete, apoi virgula si id-ul obiectului ce urmeaza sa se "
+                      "stearga")
                 print("Pentru a afisa obiectele scrie showall")
                 print("Puteti scrie mai multe comenzi separandu-le prin ;")
                 print("Exemplu: add,1,Telefon,Vorbesti cu alti oameni,3000,AAAA")
                 print("add,2,Masina,Asigura desfasurarea oamenilor pe strada,30000,BBBB")
                 print("delete,1;showall")
-                print("se face un update si vom avea 2,lampa,obiect de iluminat,200,ASDS")
+                print("se face un update si vom avea 2,lampa,obiect de iluminat,200,CCCC")
                 print("stop pentru iesi")
             elif comanda == "stop":
                 break
@@ -28,7 +29,8 @@ def command_line_console(lista):
                     comanda_separata = executa[i].split(",")
                     if comanda_separata[0] == "add":
                         if len(comanda_separata) != 6:
-                            raise ValueError("Trebuie sa introduceti exact 5 date adica id,nume,pret,locatie,descriere! ")
+                            raise ValueError("Trebuie sa introduceti exact 5 date adica id,nume,pret,locatie,"
+                                             "descriere! ")
                         id = comanda_separata[1]
                         nume = comanda_separata[2]
                         descriere = comanda_separata[3]
@@ -41,7 +43,8 @@ def command_line_console(lista):
                         print("S-a sters un obiect")
                     elif comanda_separata[0] == "update":
                         if len(comanda_separata) != 6:
-                            raise ValueError("Trebuie sa introduceti exact 5 date adica id nume pret descriere si locatie! ")
+                            raise ValueError("Trebuie sa introduceti exact 5 date adica id nume pret descriere si "
+                                             "locatie! ")
                         id = comanda_separata[1]
                         nume = comanda_separata[2]
                         descriere = comanda_separata[3]
